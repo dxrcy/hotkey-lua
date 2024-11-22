@@ -127,7 +127,7 @@ local function unwrapStaticCommand(dynamic_command)
 end
 
 ---@param dynamic_command DynamicCommand
----@return number
+---@return number?
 local function dynamicCommandCardinality(dynamic_command)
     local cardinality = nil
     for _, candidate in ipairs(dynamic_command) do
